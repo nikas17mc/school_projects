@@ -4,60 +4,41 @@
     font-size: 1.0rem;
     font-weight: 100;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* overflow: hidden; */
+
 }
-:root{
-    --primaryColor:rgb(35, 42, 63);
+
+:root {
+    --primaryColor: rgb(35, 42, 63);
     --buttons: rgba(64, 67, 72, 0.91);
 }
 
 body {
-background: var(--primaryColor);
-display:flex;
-overflow: hidden;
+    background: var(--primaryColor);
+
 }
 
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    overflow-x: auto;
+    white-space: nowrap;
+}
 
 /* --------------------------------- All script for Container 1 -----------------------*/
 .container_1 {
-    position: relative;
-    display: block;
-    height: 100%;
-    width:max-content;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.navigation {
-    display: block;
-
-
-}
-
-.navigation_list {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    height: auto;
-    background:var(--primaryColor);
-    border-top-left-radius: 11px;
-    border-top-right-radius: 11px;
-    border-bottom-left-radius: 11px;
-    border-bottom-right-radius: 11px;
+    width: max-content;
+    display:inline-block;
 }
 
 .list_item {
-    position: relative;
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
     color: #fff;
-    text-align: left;
-    justify-content: left;
-    width: 100%;
     margin: 6px;
-    margin-right:60px;
-    left: 0px;
+    /* margin-right:60px; */
+
     cursor: pointer;
 }
 
@@ -71,10 +52,10 @@ overflow: hidden;
 .list_item p {
     font-size: 18px;
     margin: 6px;
-    margin-right:80px;
+    margin-right: 80px;
     padding: 1px;
     font-weight: bolder;
-    width: max-content;
+    /* width: max-content; */
     line-height: 26px;
     transition: text-shadow 0.3s ease;
 }
@@ -84,21 +65,13 @@ overflow: hidden;
 }
 
 
-.navi_you_fav {
-margin-top:30px;
-}
-
-.navi_you_fav img {
-    width: 26px;
-    margin: 6px;
-    padding: 1px;
+.navi_gap {
+    margin-top: 30px;
 }
 
 .navi_buttons {
     display: block;
-    position: relative;
-    width: max-content;
-    right: 0px;
+    /* width: max-content; */
     margin: 4px;
     padding: 1px;
     line-height: 26px;
@@ -109,27 +82,21 @@ margin-top:30px;
 
 .filter_list {
     display: flex;
-    width: 50%;
-    position: relative;
-    height: auto;
-    padding: 1px;
+    width: 100%;
+    padding: 4px;
     margin: 1px;
-    justify-content: space-between;
 }
 
 .filter_list .filter {
     color: #fff;
     padding: 8px;
-    display: block;
-    position: relative;
     border-radius: 8px;
     text-align: center;
     background: rgba(60, 64, 76, 0.84);
     cursor: pointer;
-    width: 100%;
     margin: 2px;
-    margin-right:4px
 }
+
 .filter_list .filter:hover {
     background: rgb(69, 73, 87);
 }
@@ -137,14 +104,15 @@ margin-top:30px;
 .reset {
     color: #fff;
     padding: 8px;
-    position: relative;
     border-radius: 8px;
     text-align: center;
-    background: rgba(60, 64, 76, 0.775);
+    background: rgba(60, 64, 76, 0.84);
     cursor: pointer;
     display: none;
-    width: 25%;
-    margin: 1px 15px 1px 1px;
+    margin-top: 2px;
+    margin-right: 15px;
+    margin-bottom: 2px;
+    margin-left: 2px;
 }
 
 .search_list {
@@ -177,7 +145,8 @@ margin-top:30px;
     padding: 1px;
 
 }
-.search_sort #search:hover{
+
+.search_sort #search:hover {
     background: rgba(70, 74, 80, 0.815);
 }
 
@@ -192,14 +161,14 @@ margin-top:30px;
     border: none;
     border-radius: 30px;
     background: transparent;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .search_sort #search:focus {
     width: 250px;
     opacity: 1;
     outline: none;
-    cursor:text;
+    cursor: text;
     background: rgba(70, 74, 80, 0.815);
 }
 
@@ -213,63 +182,124 @@ margin-top:30px;
 
 }
 
-.playlist_text{
-    color:#fff;
+.playlist_text {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+    color: #fff;
     font-size: 1.2em;
     line-height: 30px;
-    cursor:pointer;
+    cursor: pointer;
     transition: text-shadow 0.3s ease;
-
+    border-top-right-radius: 11px;
+    border-top-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+    border-bottom-left-radius: 11px;
 }
-.playlist_text:hover{
-    text-shadow: 1px 1px 10px whitesmoke;
+
+.playlist_text:hover {
+    background: rgba(130, 127, 127, 0.493);
 }
 
-.playlist_text span{
-    color:darkgrey;
+.playlist_text span {
+    color: darkgrey;
     font-size: 0.8em;
+}
+.playlist_pic_hov{
+    display:none;
 }
 /* --------------------------------- End of the Script ------------------------------------*/
 
 /* --------------------------------- All script for Container 2 -----------------------*/
 .container_2 {
-    position: relative;
-    display: block;
+    display:inline-block;
+    /* max-width: 30%; */
     height: 100%;
-    width:max-content;
-    flex-direction: column;
-    flex-wrap: wrap;
-    overflow-y:scroll;
     scrollbar-width: none;
 }
 
-.header_nav{
-    width:100%;
-    height:30px;
-}
-.header_nav button{
-    font-size: 18px;
-    font-weight: 800;
-    inline-size: 0.5rem;
-    vertical-align: middle;
-    border:none;
+.header_nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80vw;
+    height: auto;
+    position: sticky;
+    background: transparent;
+    z-index: 1;
+    padding: 10px;
 }
 
-.section{
+.header_nav button {
+    color: #fff;
+    padding: 4px;
+    display: block;
+    border-radius: 8px;
+    text-align: center;
+    background: rgba(60, 64, 76, 0.84);
+    cursor: pointer;
+    width: max-content;
+    margin: 2px;
+    margin-right: 4px;
+}
+
+.section {
+    max-width: max-content;
     background: linear-gradient(180deg, rgba(49, 120, 146, 0.91) 0%, rgba(35, 74, 88, 0.91) 40%, rgba(59, 61, 66, 0.91) 100%);
-    width:100%;
+}
+
+#timeChanger {
+    color: #fff;
+    /* margin-top:20px; */
+    /* z-index: 0; */
+    /* top: 60px; */
+    /* width: 100px; */
+    /* margin-bottom: 50px; */
+    padding: 3px;
+    font-size: 2em;
+    line-height: 60px;
+    font-weight: 800;
 
 }
-.block_list{
-    width:100vw;
-    top:0px;
-    left:50px;
+
+.block_list {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    gap: 5px;
+    padding:10px;
+    margin:10px;
 }
+
+.block {
+    /* flex-basis: calc(33.33% - 20px); */
+    /* 33.33% für drei Blöcke in einer Reihe, subtrahiere den Abstand */
+    border: 1px solid #000;
+    padding: 0px;
+    box-sizing: border-box; /* Um den Padding und die Größe innerhalb des Blocks zu berücksichtigen */
+    width: 100%; /* Um den Block innerhalb der .block_list vollständig auszufüllen */
+}
+
+.block img {
+    width: 26px; /* Um das Bild innerhalb des Blocks vollständig auszufüllen */
+    height: auto; /* Um das Seitenverhältnis des Bildes beizubehalten */
+}
+
+.block p {
+    font-size: 18px;
+    padding: 1px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0; /* Um zusätzlichen Abstand zu entfernen */
+}
+
 
 /* --------------------------------- End of the Script ------------------------------------*/
 
 /* --------------------------------- All script for Container 3 -----------------------*/
-
+.container_3 {
+    display: none;
+}
 
 
 
