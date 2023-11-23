@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    </head>
+<head>
+    <title>Tankstellen-Preisrechner</title>
+</head>
+<body>
+    <h3>Tankstellen-Preisrechner</h2>
+    <form method="post" action="u_ifelse1_gpt.php">
+        <label for="menge">Menge in Litern:</label>
+        <input type="number" name="menge" id="menge" required>
+        <br>
+        <label for="sorte">Sorte (N für Normal, S für Super):</label>
+        <select name="sorte" id="sorte" required>
+            <option value="S">Super 1.40/Liter</option>
+            <option value="N">Normal 1.35/Liter</option>
+            <option value="D">Diesel 1.10/Liter</option>
+        </select>
+        <br>
+        <input type="submit" value="Preis berechnen">
+    </form>
+</body>
+</html>

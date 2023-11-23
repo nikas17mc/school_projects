@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aufgabe 11</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body{
+            padding:20px;
+            min-width:max-content;
+            min-height:max-content;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form{
+            width:300px;
+            top:50%;
+            left:50%;
+            margin:5px;
+            padding:20px;
+            transform: translate(50%,50%);
+            background:linear-gradient(90deg, rgba(232, 154, 154, 0.68),rgba(182, 217, 102, 0.68),rgba(102, 149, 200, 0.68))
+        }
+        input[type="submit"],
+        input[type="reset"]{
+            position: relative;
+            overflow: hidden;
+            justify-content: center;
+            top:50px;
+            left:5px;
+            border: 1px black solid;
+            border-top-right-radius:10px;
+            border-bottom-right-radius:10px;
+            border-bottom-left-radius:10px;
+            border-top-left-radius:10px;
+            width: 120px;
+            text-decoration: solid;
+            font-size: 0.9rem;
+            background:rgba(70, 202, 219, 0.729);
+            margin:2px;
+            padding:10px;
+            align-items: center;
+            color:white; 
+        }
+
+        input[type="text"],
+        input[type="password"]{
+            position: relative;
+            justify-content: center;
+            border-top-right-radius:10px;
+            border-bottom-right-radius:10px;
+            border-bottom-left-radius:10px;
+            border-top-left-radius:10px;
+            top:20px;
+            left:20px;
+            padding:10px;
+            margin:2px;
+            width:250px;
+            color:black;
+            border: 1px solid black;
+        }
+        input[type="text"]:valid,
+        input[type="password"]:valid{
+            border: 1px solid green;
+            background:rgba(131, 219, 90, 0.717)
+        }
+
+        input[type="text"]:invalid,
+        input[type="password"]:invalid{
+            border: 1px solid red;
+            background:rgba(232, 154, 154, 0.68) 
+            
+        }
+    </style>
+</head>
+<body>
+    <form action="u_logisch.php" method="post">
+        <label for="name">Name</label>
+        <p><input type="text" name="name" id="name" placeholder="Name" required></p>
+        <label for="pw"> Password</label>
+        <p><input type="password" name="pw" id="pw" placeholder="Password" required ></p>
+        <p><input type="submit" value="Daten senden"><input type="reset" value="Zurücksetzen"></input></p>
+    </form>
+</body>
+</html>

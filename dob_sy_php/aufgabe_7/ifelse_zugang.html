@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+            color:none;
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        form{ 
+            justify-content: center;
+            align-items: center;
+            width:50%;
+            height:50%;
+            background: linear-gradient(0.25turn, rgba(71, 184, 160, 0.724), rgba(162, 91, 91, 0.724));
+            top:50%;
+            left: 50%;
+            transform: translate(50%,50%);
+            color: white;
+            border-radius: 20px;
+            padding:10px;
+            box-shadow: 2px 2px 2px 2px rgba(216, 242, 176, 0), 1px 1px 1px 1px rgba(115, 242, 210, 0);
+        }
+
+        #pw{
+
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+
+            top:50%;
+            left:50%;
+            width:30%;
+            margin:10px;
+            padding:10px;
+            border-radius:5px;
+            color:rgb(198, 179, 179);
+            background:rgb(64, 90, 29);
+            font-size: 1.5rem;
+        }
+
+        #sub, #res{
+            transform: translateX(50%);
+            bottom: 10px;
+            left:50%;
+            width:30%;
+            background:rgba(34, 142, 200, 0.943);
+            color:white;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin:10px;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="ifelse_zugang.php" method="post">
+    <input id="pw" type="password" name="pw" placeholder="Ihr Password"/><br>
+    <input id="sub" type="submit" value="Anmelden"/>
+    <input id="res" type="reset" value="Zurücksetzen">
+    </form>
+</body>
+</html>

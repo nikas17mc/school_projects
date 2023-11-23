@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            top:50%;
+            left:50%;
+            transform: translate(50%,50%);
+            margin: 20px;
+            padding:10px;
+            justify-content: center;
+            align-items: center;
+            display:flex;
+        }
+        input{
+            position: relative;
+            background:rgba(0,0,0,0);
+            border:1px;
+            margin:2px;
+            padding:4px;
+            font-size: 1.2rem;
+        }
+
+        input[type="submit"],input[type="reset"]{
+            margin: 3px;
+            position: relative;
+            padding: 5px;
+            background: rgb(0,0,0,0);
+            color:white;
+            max-width:100px;
+            top: 2px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <form action="u_ifelse.php" method="post">
+        <p><input type="text" name="volume" id=""> <span>Menge in Liter</span></p>
+        <p><input type="text" name="sorte" id=""> <span>Sorte (S oder N oder D)</span></p>
+        <p><input type="submit" value="Daten senden"><input type="reset" value="Zurücksetzen"></p>
+    </form>
+</body>
+
+</html>
