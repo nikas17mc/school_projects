@@ -13,5 +13,3 @@ echo "Zahl $zufallszahl, Summe $summe<br />";
 }
 
 while ($summe < 25);
-
-?>

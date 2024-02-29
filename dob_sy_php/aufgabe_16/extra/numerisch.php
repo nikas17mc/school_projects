@@ -6,4 +6,3 @@
     for($i=0;$i<=6;$i++){
         echo "Temperatur".$i.": ".$tp[$i]."<br/>";
     }
-?>

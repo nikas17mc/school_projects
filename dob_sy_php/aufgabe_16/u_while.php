@@ -17,7 +17,7 @@
             $spieler1 = 0;
             $spieler2 = 0;
 
-            while($spiler1 < 25 && $spieler2 < 25){
+            while($spieler1 < 25 && $spieler2 < 25){
                 $wurf1 = rand(1,10);
                 $wurf2 = rand(1,10);
 
@@ -30,13 +30,13 @@
         </tbody>
     </table>
     <?php
-        if ($spieler1 >= 30 && $spieler2 >= 30) {
-            echo "Unentschieden!";
-        } elseif ($spieler1 >= 25) {
-            echo "Spieler 1 hat gewonnen!";
-        } else {
-            echo "Spieler 2 hat gewonnen!";
-        }
+       if ($spieler1 > $spieler2) {
+        echo "<p>Spieler 1 gewinnt</p>";
+    } else if ($spieler1 < $spieler2){
+        echo "<p>Spieler 2 gewinnt</p>";
+    }else {
+        echo "<p>Unentschieden!</p>";
+    }
     ?>
 </body>
 </html>

@@ -11,7 +11,3 @@ while($summe < 25){
     echo "Nr. $zaehler, Zahl $zufallszahl, Summe $summe<br/>";
     if($zahler >= 6){break;};
 }
-
-
-
-?>

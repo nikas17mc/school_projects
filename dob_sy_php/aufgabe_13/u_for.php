@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
 <?php
     for ($a = 13;$a < 30;$a=$a + 4){
         echo "$a ";
@@ -60,6 +52,3 @@
         }
         echo "$g ";
     }
-    ?>
-</body>
-</html>

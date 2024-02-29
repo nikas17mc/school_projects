@@ -9,5 +9,3 @@ continue;
 echo "Zeile $i<br />";
 
 }
-
-?>
